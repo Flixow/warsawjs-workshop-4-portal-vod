@@ -21,7 +21,6 @@ export class LatestVideoListComponent implements OnInit {
     this.latestVideoService.getVideosWithVisitCount()
       .then((VIDEOS) => {
         this.videos = VIDEOS.sort(this.sortingService.sortByVisitCount);
-        console.log(this.videos);
       })
   }
 
