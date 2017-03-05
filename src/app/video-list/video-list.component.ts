@@ -19,7 +19,6 @@ export class VideoListComponent implements OnInit {
   }
 
   sortAscending() {
-    console.log(this.videos.length);
     this.videos = this.videos.sort(this.sortingService.ascending);
   }
 
