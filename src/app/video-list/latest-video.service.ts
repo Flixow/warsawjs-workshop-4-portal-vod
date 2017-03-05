@@ -23,4 +23,15 @@ export class LatestVideoService {
     return this.getVideos()
       .then((videos) => videos.filter((video) => video.title.toLowerCase().includes(phrase.toLowerCase())));
   }
+
+  getVideosWithVisitCount(): Promise<any[]> {
+    return this.getVideos()
+      .then((videos) => {
+        return videos.map((video) => {
+          video.visitCount = Number(localStorage.getItem(video.title)) || 0;
+
+          return video;
+        })
+      });
+  }
 }

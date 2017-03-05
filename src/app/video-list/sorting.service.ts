@@ -16,4 +16,10 @@ export class SortingService {
     if (a.title > b.title) return -1;
     return 0;
   }
+
+  sortByVisitCount(a: any, b:any) {
+    if (a.visitCount > b.visitCount) return -1;
+    if (a.visitCount < b.visitCount) return 1;
+    return 0;
+  }
 }
