@@ -1,0 +1,10 @@
+img {
+    widht: 200px;
+    height: 200px;
+}
+
+.videoTitle {
+    font-weight: 700;
+    background-color: gray;
+    padding: 15px 10px;
+}

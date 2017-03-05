@@ -1,0 +1,12 @@
+<div *ngIf="!video">Loading Video. Please Wait...</div>
+
+<div *ngIf="video" class="videoContainer">
+    <h3 class="videoTitle">{{video.title}}</h3>
+    <video
+            [src]="video.url"
+            controls
+            [poster]="video.thumb"
+    >
+    </video>
+    <div class="videoDescription">{{video.description}}</div>
+</div>

@@ -1,0 +1,5 @@
+<div *ngIf="video">
+    <h3 class="videoTitle">{{video.title}}</h3>
+    <a routerLink="/video/{{video.id}}"><img [src]="video.thumb" /></a>
+    <div class="videoDescription">{{video.description}}</div>
+</div>

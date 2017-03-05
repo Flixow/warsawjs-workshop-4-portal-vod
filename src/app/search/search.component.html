@@ -1,0 +1,10 @@
+<h3>Wyszukiwarka</h3>
+<input
+  #phrase
+  type="text"
+  placeholder="Wpisz tytuł filmu..."
+  (keyup)="search(phrase.value)"
+  autofocus
+>
+
+<app-video-list [videos]="videos"></app-video-list>
